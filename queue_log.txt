@@ -1,0 +1,119 @@
+18:24:18.055 26726-26752/ D/MainApplication: poke consumer manager at 1466159059020774729
+18:24:17.934 26726-26752/ D/MainApplication: keep alive: 1466159059020774729
+18:24:18.032 26726-26752/ D/MainApplication: [queue_CONSTRAINT_CHANGE_3] remove message null
+18:24:18.032 26726-26752/ D/MainApplication: [queue_JOB_CONSUMER_IDLE_5] remove message null
+18:24:18.032 26726-26752/ D/MainApplication: joq idle. running:? true
+18:24:18.033 26726-26752/ D/MainApplication: Job queue idle. next job at: 1466159163914528323
+18:24:18.033 26726-26752/ D/MainApplication: add delayed message com.birbit.android.jobqueue.messaging.message.ConstraintChangeMessage@5e2080c at time 1466159163914528323
+18:24:18.034 26726-26752/ D/MainApplication: [priority_mq] did on idle post a message? true
+18:24:18.034 26726-26752/ D/MainApplication: [priority_mq] looking for next message at time 1466159058033691861
+18:24:18.034 26726-26752/ D/MainApplication: flushing messages at time 1466159058033691861
+18:24:18.034 26726-26752/ D/MainApplication: returning next ready at 105880836462 ns
+18:24:18.034 26726-26752/ D/MainApplication: [priority_mq] next delayed job 1466159163914528323
+18:24:18.034 26726-26752/ D/MainApplication: [queue_SCHEDULER_2] remove message null
+18:24:18.034 26726-26752/ D/MainApplication: [queue_RUN_JOB_RESULT_6] remove message null
+18:24:18.034 26726-26752/ D/MainApplication: [queue_CONSTRAINT_CHANGE_3] remove message null
+18:24:18.034 26726-26752/ D/MainApplication: [queue_JOB_CONSUMER_IDLE_5] remove message null
+18:24:18.034 26726-26752/ D/MainApplication: [priority_mq] did on idle post a message? false
+18:24:18.036 26726-26726/ D/.JobService: getJobManager() called with: 
+18:24:18.036 26726-26726/ D/MainApplication: MainApplication::getJobManager()
+18:24:18.037 26726-26726/ D/.JobService: getJobManager() called with: 
+18:24:18.037 26726-26726/ D/MainApplication: MainApplication::getJobManager()
+18:24:18.037 26726-26726/ D/MainApplication: [FW Scheduler] start job SchedulerConstraint{uuid='fb230c69-0adb-4085-8091-907b3c396fa7', delayInMs=855000000, networkStatus=2} 950
+18:24:18.037 26726-26726/ D/MainApplication: [queue_SCHEDULER_2] post message com.birbit.android.jobqueue.messaging.message.SchedulerMessage@2ac
+18:24:18.038 26726-26752/ D/MainApplication: [priority_mq] looking for next message at time 1466159058037647226
+18:24:18.038 26726-26752/ D/MainApplication: flushing messages at time 1466159058037647226
+18:24:18.038 26726-26752/ D/MainApplication: returning next ready at 105876881097 ns
+18:24:18.038 26726-26752/ D/MainApplication: [priority_mq] next delayed job 1466159163914528323
+18:24:18.038 26726-26752/ D/MainApplication: [queue_SCHEDULER_2] remove message com.birbit.android.jobqueue.messaging.message.SchedulerMessage@2ac
+18:24:18.038 26726-26752/ D/MainApplication: [priority_mq] consuming message of type SCHEDULER
+18:24:18.038 26726-26752/ D/MainApplication: considering adding a new consumer. Should poke all waiting? true isRunning? true waiting workers? 1
+18:24:18.038 26726-26752/ D/MainApplication: there are waiting workers, will poke them instead
+18:24:18.038 26726-26752/ D/MainApplication: [consumer_4] post message Command[2]
+18:24:18.038 26726-27279/ D/MainApplication: flushing messages at time 1466159058038459674
+18:24:18.038 26726-27279/ D/MainApplication: returning next ready at 982315055 ns
+18:24:18.039 26726-27279/ D/MainApplication: [consumer_4] remove message Command[2]
+18:24:18.039 26726-27279/ D/MainApplication: Consumer has been poked.
+18:24:18.039 26726-27279/ D/MainApplication: flushing messages at time 1466159058038640715
+18:24:18.039 26726-27279/ D/MainApplication: returning next ready at 982134014 ns
+18:24:18.039 26726-27279/ D/MainApplication: [consumer_4] remove message null
+18:24:18.039 26726-27279/ D/MainApplication: consumer manager on idle
+18:24:18.039 26726-27279/ D/MainApplication: [queue_JOB_CONSUMER_IDLE_5] post message com.birbit.android.jobqueue.messaging.message.JobConsumerIdleMessage@da5aa37
+18:24:18.039 26726-27279/ D/MainApplication: [consumer_4] will wait on the lock until 1466159059020774729
+18:24:18.039 26726-26752/ D/MainApplication: there were waiting workers, poked them and I'm done
+18:24:18.039 26726-26752/ D/MainApplication: [priority_mq] looking for next message at time 1466159058038902070
+18:24:18.039 26726-26752/ D/MainApplication: flushing messages at time 1466159058038902070
+18:24:18.039 26726-26752/ D/MainApplication: returning next ready at 105875626253 ns
+18:24:18.039 26726-26752/ D/MainApplication: [priority_mq] next delayed job 1466159163914528323
+18:24:18.039 26726-26752/ D/MainApplication: [queue_SCHEDULER_2] remove message null
+18:24:18.039 26726-26752/ D/MainApplication: [queue_RUN_JOB_RESULT_6] remove message null
+18:24:18.039 26726-26752/ D/MainApplication: [queue_CONSTRAINT_CHANGE_3] remove message null
+18:24:18.039 26726-26752/ D/MainApplication: [queue_JOB_CONSUMER_IDLE_5] remove message com.birbit.android.jobqueue.messaging.message.JobConsumerIdleMessage@da5aa37
+18:24:18.039 26726-26752/ D/MainApplication: [priority_mq] consuming message of type JOB_CONSUMER_IDLE
+18:24:18.040 26726-26752/ D/MainApplication: keep alive: 1466159059020774729
+18:24:18.040 26726-26752/ D/MainApplication: Consumer idle, will kill? false . isRunning: true
+18:24:18.040 26726-26752/ D/MainApplication: add delayed message Command[2] at time 1466159059020774729
+18:24:18.040 26726-26752/ D/MainApplication: poke consumer manager at 1466159059020774729
+18:24:18.041 26726-26752/ D/MainApplication: [FW Scheduler] on finished job SchedulerConstraint{uuid='fb230c69-0adb-4085-8091-907b3c396fa7', delayInMs=855000000, networkStatus=2}. reschedule:false
+18:24:18.041 26726-27279/ D/MainApplication: flushing messages at time 1466159058041464413
+18:24:18.042 26726-27279/ D/MainApplication: returning next ready at 979310316 ns
+18:24:18.042 26726-27279/ D/MainApplication: [consumer_4] remove message null
+18:24:18.042 26726-27279/ D/MainApplication: [consumer_4] will wait on the lock until 1466159059020774729
+18:24:18.043 26726-26726/ D/.JobService: getJobManager() called with: 
+18:24:18.043 26726-26726/ D/MainApplication: MainApplication::getJobManager()
+18:24:18.045 26726-26752/ D/MainApplication: [FW Scheduler] scheduled a framework job. Success? true id: 1 created id: 951
+18:24:18.045 26726-26752/ D/MainApplication: [priority_mq] looking for next message at time 1466159058045410767
+18:24:18.045 26726-26752/ D/MainApplication: flushing messages at time 1466159058045410767
+18:24:18.045 26726-26752/ D/MainApplication: returning next ready at 105869117556 ns
+18:24:18.045 26726-26752/ D/MainApplication: [priority_mq] next delayed job 1466159163914528323
+18:24:18.046 26726-26752/ D/MainApplication: [queue_SCHEDULER_2] remove message null
+18:24:18.046 26726-26752/ D/MainApplication: [queue_RUN_JOB_RESULT_6] remove message null
+18:24:18.046 26726-26752/ D/MainApplication: [queue_CONSTRAINT_CHANGE_3] remove message null
+18:24:18.046 26726-26752/ D/MainApplication: [queue_JOB_CONSUMER_IDLE_5] remove message null
+18:24:18.046 26726-26752/ D/MainApplication: joq idle. running:? true
+18:24:18.047 26726-26752/ D/MainApplication: Job queue idle. next job at: 1466159163914528323
+18:24:18.047 26726-26752/ D/MainApplication: add delayed message com.birbit.android.jobqueue.messaging.message.ConstraintChangeMessage@b98a85b at time 1466159163914528323
+18:24:18.047 26726-26752/ D/MainApplication: [priority_mq] did on idle post a message? true
+18:24:18.047 26726-26752/ D/MainApplication: [priority_mq] looking for next message at time 1466159058047084308
+18:24:18.047 26726-26752/ D/MainApplication: flushing messages at time 1466159058047084308
+18:24:18.047 26726-26752/ D/MainApplication: returning next ready at 105867444015 ns
+18:24:18.047 26726-26752/ D/MainApplication: [priority_mq] next delayed job 1466159163914528323
+18:24:18.047 26726-26752/ D/MainApplication: [queue_SCHEDULER_2] remove message null
+18:24:18.047 26726-26752/ D/MainApplication: [queue_RUN_JOB_RESULT_6] remove message null
+18:24:18.047 26726-26752/ D/MainApplication: [queue_CONSTRAINT_CHANGE_3] remove message null
+18:24:18.047 26726-26752/ D/MainApplication: [queue_JOB_CONSUMER_IDLE_5] remove message null
+18:24:18.047 26726-26752/ D/MainApplication: [priority_mq] did on idle post a message? false
+18:24:18.048 26726-26726/ D/.JobService: getJobManager() called with: 
+18:24:18.048 26726-26726/ D/MainApplication: MainApplication::getJobManager()
+18:24:18.049 26726-26726/ D/.JobService: getJobManager() called with: 
+18:24:18.049 26726-26726/ D/MainApplication: MainApplication::getJobManager()
+18:24:18.049 26726-26726/ D/MainApplication: [FW Scheduler] start job SchedulerConstraint{uuid='fb230c69-0adb-4085-8091-907b3c396fa7', delayInMs=855900000, networkStatus=2} 951
+18:24:18.050 26726-26726/ D/MainApplication: [queue_SCHEDULER_2] post message com.birbit.android.jobqueue.messaging.message.SchedulerMessage@2ac
+18:24:18.050 26726-26752/ D/MainApplication: [priority_mq] looking for next message at time 1466159058050333840
+18:24:18.050 26726-26752/ D/MainApplication: flushing messages at time 1466159058050333840
+18:24:18.050 26726-26752/ D/MainApplication: returning next ready at 105864194483 ns
+18:24:18.051 26726-26752/ D/MainApplication: [priority_mq] next delayed job 1466159163914528323
+18:24:18.051 26726-26752/ D/MainApplication: [queue_SCHEDULER_2] remove message com.birbit.android.jobqueue.messaging.message.SchedulerMessage@2ac
+18:24:18.051 26726-26752/ D/MainApplication: [priority_mq] consuming message of type SCHEDULER
+18:24:18.051 26726-26752/ D/MainApplication: considering adding a new consumer. Should poke all waiting? true isRunning? true waiting workers? 1
+18:24:18.051 26726-26752/ D/MainApplication: there are waiting workers, will poke them instead
+18:24:18.051 26726-26752/ D/MainApplication: [consumer_4] post message Command[2]
+18:24:18.051 26726-26752/ D/MainApplication: there were waiting workers, poked them and I'm done
+18:24:18.052 26726-27279/ D/MainApplication: flushing messages at time 1466159058051559830
+18:24:18.052 26726-26752/ D/MainApplication: [priority_mq] looking for next message at time 1466159058051587278
+18:24:18.052 26726-27279/ D/MainApplication: returning next ready at 969214899 ns
+18:24:18.052 26726-26752/ D/MainApplication: flushing messages at time 1466159058051587278
+18:24:18.052 26726-27279/ D/MainApplication: [consumer_4] remove message Command[2]
+18:24:18.052 26726-26752/ D/MainApplication: returning next ready at 105862941045 ns
+18:24:18.052 26726-27279/ D/MainApplication: Consumer has been poked.
+18:24:18.052 26726-26752/ D/MainApplication: [priority_mq] next delayed job 1466159163914528323
+18:24:18.052 26726-27279/ D/MainApplication: flushing messages at time 1466159058051712226
+18:24:18.052 26726-26752/ D/MainApplication: [queue_SCHEDULER_2] remove message null
+18:24:18.052 26726-27279/ D/MainApplication: returning next ready at 969062503 ns
+18:24:18.052 26726-26752/ D/MainApplication: [queue_RUN_JOB_RESULT_6] remove message null
+18:24:18.052 26726-27279/ D/MainApplication: [consumer_4] remove message null
+18:24:18.052 26726-26752/ D/MainApplication: [queue_CONSTRAINT_CHANGE_3] remove message null
+18:24:18.052 26726-27279/ D/MainApplication: consumer manager on idle
+18:24:18.052 26726-26752/ D/MainApplication: [queue_JOB_CONSUMER_IDLE_5] remove message null
+18:24:18.052 26726-26752/ D/MainApplication: joq idle. running:? true
+18:24:18.052 26726-27279/ D/MainApplication: [queue_JOB_CONSUMER_IDLE_5] post message com.birbit.android.jobqueue.messaging.message.JobConsumerIdleMessage@da5aa37
