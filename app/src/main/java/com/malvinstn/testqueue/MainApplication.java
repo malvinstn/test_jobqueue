@@ -70,7 +70,7 @@ public class MainApplication extends Application{
 
                     @Override
                     public void v(String text, Object... args) {
-
+                        Log.v(TAG, String.format(text, args));
                     }
                 })
                 .loadFactor(5)
