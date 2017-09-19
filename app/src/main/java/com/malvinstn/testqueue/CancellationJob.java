@@ -9,30 +9,19 @@ import android.support.annotation.NonNull;
 import android.support.annotation.Nullable;
 import android.util.Log;
 
-import java.util.Date;
-
 public class CancellationJob extends Job {
 
     private static final int JOB_PRIORITY = 100;
     private static final int CANCELLATION_RETRY_LIMIT = 3;
     private static final String TAG = "CancellationJob";
     private final String mId;
-    private final String mText;
-    private final JobEnum mEnum;
-    private final Date mTimestamp;
-    private final JobEnum2 mEnum2;
 
-    public CancellationJob(String id, JobEnum anEnum, String text, Date timestamp, JobEnum2 enum2) {
+    public CancellationJob(String id) {
         super(new Params(JOB_PRIORITY)
                 .requireNetwork()
                 .persist()
-                .groupBy("cancel"));
-
+                .singleInstanceBy("id:" + id));
         mId = id;
-        mEnum = anEnum;
-        mText = text;
-        mTimestamp = timestamp;
-        mEnum2 = enum2;
         Log.d(TAG, "CancellationJob() called with: " + "id = [" + id + "]");
     }
 
@@ -43,7 +32,9 @@ public class CancellationJob extends Job {
 
     @Override
     public void onRun() throws Throwable {
-        throw new RuntimeException("Forced Exception");
+        Log.d(TAG, "onRun: Starting " + mId);
+        Thread.sleep(20000);
+        Log.d(TAG, "onRun: Finished " + mId);
     }
 
     @Override

@@ -7,10 +7,9 @@ import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.widget.Button;
 
-import java.util.Date;
-import java.util.UUID;
-
 public class MainActivity extends AppCompatActivity {
+
+    private int counter;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -22,11 +21,7 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 JobManager jobManager = MainApplication.getInstance().getJobManager();
-                jobManager.addJobInBackground(new CancellationJob(UUID.randomUUID().toString(), JobEnum.ENUM_A, "lorem ipsum dolor sit amet.", new Date(), JobEnum2.JOB_1));
-                jobManager.addJobInBackground(new CancellationJob(UUID.randomUUID().toString(), JobEnum.ENUM_B, "lorem ipsum dolor sit amet.", new Date(), JobEnum2.JOB_1));
-                jobManager.addJobInBackground(new CancellationJob(UUID.randomUUID().toString(), JobEnum.ENUM_A, "lorem ipsum dolor sit amet.", new Date(), JobEnum2.JOB_2));
-                jobManager.addJobInBackground(new CancellationJob(UUID.randomUUID().toString(), JobEnum.ENUM_B, "lorem ipsum dolor sit amet.", new Date(), JobEnum2.JOB_2));
-                jobManager.addJobInBackground(new CancellationJob(UUID.randomUUID().toString(), JobEnum.ENUM_B, "lorem ipsum dolor sit amet.", new Date(), JobEnum2.JOB_2));
+                jobManager.addJobInBackground(new CancellationJob("" + (++counter)));
             }
         });
     }

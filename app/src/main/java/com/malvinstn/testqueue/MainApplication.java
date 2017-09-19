@@ -46,7 +46,7 @@ public class MainApplication extends Application{
         Log.d(TAG, "MainApplication::configure()");
         Configuration.Builder builder = new Configuration.Builder(this)
                 .minConsumerCount(0)
-                .maxConsumerCount(1)
+                .maxConsumerCount(3)
                 .customLogger(new CustomLogger() {
                     @Override
                     public boolean isDebugEnabled() {
@@ -73,8 +73,8 @@ public class MainApplication extends Application{
                         Log.v(TAG, String.format(text, args));
                     }
                 })
-                .loadFactor(5)
-                .consumerKeepAlive(15);
+                .loadFactor(3)
+                .consumerKeepAlive(5);
 
         if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.LOLLIPOP) {
             builder.scheduler(FrameworkJobSchedulerService.createSchedulerFor(this,
